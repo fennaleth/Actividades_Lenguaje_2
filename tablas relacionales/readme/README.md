@@ -26,20 +26,31 @@ Entrevista con el Gerente de Proyectos:
 Tablas y Propiedades:
 
 -Users -> Campos: ID_user(int), name(varchar), email(varchar). Representa a cada usuario del sistema.
+
 -Profiles -> Campos: ID_profile(int), FK_user(int), bio(text), avatar_url(varchar). Información extendida del usuario.
+
 -Posts -> ID_post(int), FK_user(int), title(varchar), content(text), created_at(timestamp). Publicaciones creadas por usuarios.
+
 -Comments -> Campos: ID_comment(int), FK_post(int), FK_user(int), content(text), created_at(timestamp). Comentarios de usuarios sobre publicaciones.
+
 -Tags -> Campos: ID_tag(int), name(varchar). Etiquetas temáticas reutilizables.
+
 -Post_Tags -> Campos: FK_post(int), FK_tag(int). Relación entre publicaciones y etiquetas.
+
 -Media -> Campos: ID_media(int), file_url(varchar), media_able(int), media_type(enum). Archivos multimedia asociados a publicaciones o comentarios.
 
 **Tipos de Relaciones entre las Tablas y Justificación.**
 
 -Users 1:1 Profiles -> Cada usuario tiene un perfil único con información adicional.
+
 -Users 1:N Posts -> Un usuario puede crear muchas publicaciones.
+
 -Posts 1:N Comments -> Una publicación puede tener muchos comentarios.
+
 -Users 1:N Comments -> Un usuario puede comentar en muchas publicaciones.
+
 -Posts N:N Tags -> Una publicación puede tener muchas etiquetas, y una etiqueta puede aplicarse a muchas publicaciones.
+
 -Media Polimórficas con Posts o Comments -> Un archivo multimedia puede pertenecer a una publicación o a un comentario.
 
 **Conclusión del Análisis.**
@@ -47,9 +58,13 @@ Tablas y Propiedades:
 Gracias a la entrevista, se pudo identificar que el sistema debía:
 
 -Soportar múltiples tipos de usuarios con perfiles personalizados.
+
 -Permitir la creación y organización de publicaciones.
+
 -Facilitar la retroalimentación mediante comentarios.
+
 -Asociar archivos multimedia a distintos tipos de contenido.
+
 -Clasificar publicaciones con etiquetas reutilizables.
 
 El modelo de datos propuesto cubre todos estos requerimientos de forma escalable y normalizada, permitiendo futuras extensiones como likes, historial de edición, o notificaciones.
