@@ -7,18 +7,25 @@ La empresa Creativa360 es una agencia de marketing digital que gestiona campaña
 Entrevista con el Gerente de Proyectos:
 
 -Analista: ¿Cuál es el objetivo principal del sistema que desean implementar?
+
 -Cliente: Queremos una plataforma donde nuestros redactores puedan crear publicaciones, los clientes puedan dejar comentarios, y podamos organizar todo con etiquetas y archivos multimedia.
+
 
 -Analista: ¿Qué tipo de usuarios interactuarán con el sistema?
 -Cliente: Principalmente redactores, diseñadores y clientes. Cada uno debe tener un perfil con información básica.
 
 -Analista: ¿Cómo gestionan actualmente las publicaciones y los comentarios?
+
 -Cliente: Usamos hojas de cálculo y correos. Es un caos. Queremos que cada publicación tenga comentarios asociados y que podamos adjuntar imágenes o videos.
 
+
 -Analista: ¿Desean categorizar o etiquetar las publicaciones?
+
 -Cliente: Sí, usamos etiquetas como “branding”, “SEO”, “redes sociales”, etc. Una publicación puede tener varias etiquetas.
 
+
 -Analista: ¿Los archivos multimedia pueden estar en publicaciones y comentarios?
+
 -Cliente: Exacto. A veces los clientes suben imágenes en los comentarios, y nosotros también en las publicaciones.
 
 **Traducción de Requerimientos al Modelo de Datos.**
