@@ -1,4 +1,4 @@
-Simulación de Entrevista. Recolección de Requerimientos.
+**Simulación de Entrevista. Recolección de Requerimientos.**
 
 Contexto del cliente:
 
@@ -21,7 +21,7 @@ Entrevista con el Gerente de Proyectos:
 -Analista: ¿Los archivos multimedia pueden estar en publicaciones y comentarios?
 -Cliente: Exacto. A veces los clientes suben imágenes en los comentarios, y nosotros también en las publicaciones.
 
-Traducción de Requerimientos al Modelo de Datos.
+**Traducción de Requerimientos al Modelo de Datos.**
 
 Tablas y Propiedades:
 
@@ -33,7 +33,7 @@ Tablas y Propiedades:
 -Post_Tags -> Campos: FK_post(int), FK_tag(int). Relación entre publicaciones y etiquetas.
 -Media -> Campos: ID_media(int), file_url(varchar), media_able(int), media_type(enum). Archivos multimedia asociados a publicaciones o comentarios.
 
-Tipos de Relaciones entre las Tablas y Justificación.
+**Tipos de Relaciones entre las Tablas y Justificación.**
 
 -Users 1:1 Profiles -> Cada usuario tiene un perfil único con información adicional.
 -Users 1:N Posts -> Un usuario puede crear muchas publicaciones.
@@ -42,7 +42,7 @@ Tipos de Relaciones entre las Tablas y Justificación.
 -Posts N:N Tags -> Una publicación puede tener muchas etiquetas, y una etiqueta puede aplicarse a muchas publicaciones.
 -Media Polimórficas con Posts o Comments -> Un archivo multimedia puede pertenecer a una publicación o a un comentario.
 
-Conclusión del Análisis.
+**Conclusión del Análisis.**
 
 Gracias a la entrevista, se pudo identificar que el sistema debía:
 
