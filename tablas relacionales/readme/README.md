@@ -58,7 +58,7 @@ Tablas y Propiedades:
 
 -Posts N:N Tags -> Una publicación puede tener muchas etiquetas, y una etiqueta puede aplicarse a muchas publicaciones.
 
--Media Polimórficas con Posts o Comments -> Un archivo multimedia puede pertenecer a una publicación o a un comentario.
+-Media Polimórfica con Posts o Comments -> Un archivo multimedia puede pertenecer a una publicación o a un comentario.
 
 **Conclusión del Análisis.**
 
